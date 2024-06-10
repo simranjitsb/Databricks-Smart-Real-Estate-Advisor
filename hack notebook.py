@@ -3,11 +3,6 @@
 
 # COMMAND ----------
 
-# MAGIC %md
-# MAGIC Databricks token: dapiee2901edbde3e36b614ff9f50a94a1f5
-
-# COMMAND ----------
-
 '''from databricks_genai_inference import ChatCompletion
 
 response = ChatCompletion.create(
