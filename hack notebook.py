@@ -16,9 +16,6 @@ response = ChatCompletion.create(
 
 print(response)'''
 
-# COMMAND ----------
-
-
 
 # COMMAND ----------
 
@@ -30,7 +27,7 @@ import json
 spark = SparkSession.builder.getOrCreate()
 
 # Load the real estate dataset
-real_estate_data = spark.read.format("delta").table("nimble_international_residential_commercial_real_estate_data_pipelines.nimble_ret.us_listings_daily")
+real_estate_data = spark.read.format("delta").table(f"{custom_catalog_name}.{custom_schema_name}.us_listings_daily_processed")
 
 # Define the model and system message
 model = "databricks-dbrx-instruct"
