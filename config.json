@@ -1,0 +1,5 @@
+{"shared-catalog": "nimble_international_residential_commercial_real_estate_data_pipelines",
+"custom-catalog": "retail_estate",
+"shared-schema": "nimble_ret",
+"custom-schema": "listings"
+}
